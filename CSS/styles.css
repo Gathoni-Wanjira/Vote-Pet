@@ -3,9 +3,95 @@ body {
     padding: 0;
     justify-content: center;
     background-color: black;
+    box-sizing: border-box;
+    
+}
+/* HEADER STYLING. */
+.logo-searchbar-login-user {
+    display: inline-flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding-top: 25px;
+    padding-bottom: 10px;
+
+}
+.logo-search {
+    display: inline-flex;
+    margin-left: 20px;
+    
+}
+
+
+logo a {
+    color: rgb(107, 75, 33);
+    font-size: 30px;
+    text-decoration: none;
+    margin-right: 50px;
+    font-weight: bold;
+    
+}
+
+.search-bar {
+    border-radius: 25px;
+    border: none;
+    padding: 15px;
+   
+    cursor: pointer;
+    font-size: 15px;
+    background-color: burlywood;
+    
+
+}
+.logins {
+    display: inline-flex;
+    margin-left:450px;
+    margin-right: 50px;
+    
+    
+
+}
+a {
+text-decoration: none;
+
+}
+
+.sign-up {
+    
+    margin-right: 50px;
+    background-color: burlywood;
+    padding: 10px;
+    border-radius: 25px;
+    width: 120px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    display: flex;
+    
+}
+.log-in { 
+    background-color: burlywood;
+    padding: 10px;
+    border-radius: 25px;
+    width: 120px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    display: flex;
+
+}
+
+
+/* MAIN STYLING */
+.LandingPage {
+    width: 100%;
+    height: 100vh;
+
 }
 
 #landingImage {
+    
     position: relative;
     background-position: center;
     background-size: cover;
@@ -13,17 +99,90 @@ body {
     width: 100%;
     background-repeat: no-repeat;
     background: fixed;
+    
 }
 
-#text-box {
-    color: bisque;
-    font-size: 62px;
-    font-weight: 300px;
+.texts {
+    width: 90%;
     text-align: center;
+    color: bisque;
     position: absolute;
-    top: 15%;
-    left: 35%;
-    width: -50%;
-    text-decoration: underline;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .texts h1 {
+    font-size: 62px;
+  }
+  
+  .texts p {
+    margin: 10px 0 40px;
+    font-size: 24px;
+}
+
+.pets {
+    color: bisque;
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+
+}
+.pets h3 {
+    color: rgb(31, 20, 7);
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 20px;
+    background-color: bisque;
+    padding: 5px;
+    width: 300px;
+    text-align: left;
+
+}
+.animal-list {
+    font-size: 20px;
+
+}
+.animal-list li {
+    border-radius: 20px;
+    padding: 5px;
+    width: 300px;
+    list-style: none;
+    cursor: pointer;
+
+}
+.animal-details {
+    position: absolute;
+    right: 20%;
+    top: 60%;
     
+}
+.animal-details img {
+    width: 300px;
+    height: 300px;
+}
+
+.animal-details p {
+    color: rgb(31, 20, 7);
+    background-color: bisque;
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left:45px ;
+
+}
+.name-vote {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: bisque;
+    color: rgb(31, 20, 7);
+    margin-left: 45px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+   border: none;
 }
