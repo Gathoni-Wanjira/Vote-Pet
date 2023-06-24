@@ -3,14 +3,14 @@ const animalDetailsNode = document.querySelector("#animal-details");
 
 function fetchPets() {
     fetch(" http://localhost:3000/characters")
-        .then((res => res.json()))
-        .then((data => builtPets(data)))
+        .then(res => res.json())
+        .then(data => builtPets(data))
 }
 
 function fetchPetById(Id) {
     fetch(`http://localhost:3000/characters/${Id}`)
-        .then((res => res.json()))
-        .then((data => createPetDetails(data)))
+        .then(res => res.json())
+        .then(data => createPetDetails(data))
 }
 
 
@@ -54,9 +54,8 @@ function builtPets(data) {
 
 function builtPetDetails(event) {
     const id = event.target.id
-    fetchPetById(id)
+    fetchPetById(id);
 }
-
 
 
 // Data to load before everything.
