@@ -1,26 +1,24 @@
 ## INTRODUCTION.  
  --- 
 
-## CODE-CHALLENGE-WK2.  
- ---
-
-  - In this code challenge you are required to create a mini app, `Flatacuties`, where you can vote for the cutest animal!  
+  - You are required to create a mini app, `Flatacuties`, where you can vote for the cutest animal!  
   - You will use a local API and build out the frontend for our app.
 
-### LEARNING GOALS.   
- ----
+### DESCRIPTION .     
+ ----   
+  - This project is a web application designed for users to cast their votes for preferred pets. It showcases a collection of pet cards that exhibit the pet's name, image, vote count, and a button to increment the vote count. By clicking on an pet's name, users can access additional details about that specific animal.   
 
- - Implement a mini web app to practice on the following:
+- The application employs JavaScript to interact with a RESTful API for data retrieval and updates. It utilizes the Fetch API to execute HTTP requests to communicate with the backend server. The server acts as a storage for pet data and offers endpoints to retrieve all pets, update vote counts, and reset vote counts.
 
-    - `array iteration`
-    - `DOM`
-    - `Events`
-    - `and Server communications.`
+
+- The frontend consists of HTML, CSS, and JavaScript. It utilizes DOM manipulation to dynamically generate the pet cards and handle user interactions like voting and resetting vote counts. Event listeners are attached to the vote and reset buttons to trigger the corresponding actions.
+
+
+ 
 
 ### REQUIREMENTS.   
  ---
 
-  - Have a well-written [README](https://github.com/GATHONI-WANJIRA/CODE-CHALLENGE-WK2/blob/main/README.md) file.
   - Fetch data from a local server running `JSON DB` server.
 
  ### PROJECT SETUP & PRE-REQUISITE  DATA.  
@@ -30,83 +28,6 @@
   - Run this command to get the backend started: `json-server --watch db.json`
   - Test your server by visiting this route in the browser:` http://localhost:3000/characters`
 
- ###  PROJECT SET-UP.  
- ---  
-
-  - Create a new project folder.
-  - Create a new GitHub repository (NB: ENSURE IT IS PRIVATE).
-  - Add your TM as a contributor to the project.
-  - Please make sure you regularly commit to the repository.
-
-###  PROJECT GUIDELINES.  
- ---   
-
- - Your project should conform to the following set of guidelines:
-
-#### CORE DELIVERABLES.  
----   
-
-As a user, You should:
-
-- See a list of all animal names. You will need to make a GET request to the following endpoint to retrieve the character data
-
-`GET /characters`
-
-Example Response:
-
-```json
-[
-  {
-    "id": 1,
-
-    "name": "Mr. Cute",
-
-    "image": "https://thumbs.gfycat.com/EquatorialIckyCat-max-1mb.gif",
-
-    "votes": 0
-  },
-
-  {
-    "id": 2,
-
-    "name": "Mx. Monkey",
-
-    "image": "https://thumbs.gfycat.com/FatalInnocentAmericanshorthair-max-1mb.gif",
-
-    "votes": 0
-  }
-]
-```
-
-- Click on an animal’s name to see its details i.e image and number of votes. Note, you should only be displaying the details of one animal at a time. You can either use the character information from your first request or make a new request to this endpoint to get the character's details
-
-`GET /characters/:id`
-
-Example Response:
-
-```json
-{
-  "id": 1,
-
-  "name": "Mr. Cute",
-
-  "image": "https://thumbs.gfycat.com/EquatorialIckyCat-max-1mb.gif",
-
-  "votes": 0
-}
-```
-
-- When viewing an animal’s details, I should be able to add the number of votes for each animal. This number of votes should then be displayed together with the animal’s details. No persistence is needed for the votes.
-
-### Bonus Deliverables. 
- ---  
-
-- These bonus deliverables are provided if you want an extra challenge and won't affect score.
-
-> Make sure to commit your work to save your progress before attempting the bonus deliverables!
-
-1. Add a reset button that resets the votes back to 0
-2. Have a form for adding animals.
 
 ## AUTHORS . 
  ---
