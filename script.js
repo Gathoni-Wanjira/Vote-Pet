@@ -1,7 +1,7 @@
 // Use DOM to access the nodes from the html.
-const petsNode = document.querySelector("#pets ul");
-const animalDetailsNode = document.querySelector("#animal-details");
-const resetNode = document.querySelector("#reset");
+const petsNode = document.querySelector("#pets ul")
+const animalDetailsNode = document.querySelector("#animal-details")
+const resetNode = document.querySelector("#reset")
 
 
 // Create a fetching pets function where you will be able to fetch the data from wholly and in specific id.
